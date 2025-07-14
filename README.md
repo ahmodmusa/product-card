@@ -16,7 +16,7 @@
 ## 📂 Contents
 | Card Name                  | Live Demo                                      | CodePen Link                                  |
 |----------------------------|-------------------------------------------------|-----------------------------------------------|
-| Minimal Product Card       | [View Live](https://ahmodmusa.github.io/product-card/Minimal) | [CodePen](https://codepen.io/Ahmod-Musa/pen/VYvLZbL)     |
+| Minimal Product Card       | [View Live](https://ahmodmusa.github.io/product-card/Minimal/minimal-1.html) | [CodePen](https://codepen.io/Ahmod-Musa/pen/VYvLZbL)     |
 | Glassmorphism Product Card | [View Live](https://yourusername.github.io/product-card-gallery/glass)  | [CodePen](https://codepen.io/yourlink2)     |
 | Neumorphism Product Card   | [View Live](https://yourusername.github.io/product-card-gallery/neumorph) | [CodePen](https://codepen.io/yourlink3)    |
 | Hover Animation Card       | [View Live](https://yourusername.github.io/product-card-gallery/hover) | [CodePen](https://codepen.io/yourlink4)     |
