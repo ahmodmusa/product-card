@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A minimal and fully responsive product card with a clean border-only design. Perfect for eCommerce sites and portfolios." />
+  <meta name="keywords" content="minimal product card, responsive card design, eCommerce UI, clean design, HTML CSS product card" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Minimal Border Only Product Card</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 10px;
+    }
+
+    .product-card {
+      border: 1px solid #d1d5db; /* Thin Border */
+      border-radius: 10px;
+      width: 320px; /* Default size */
+      max-width: 100%; /* Responsive for small screens */
+      background: #fff;
+      text-align: center;
+      transition: border-color 0.3s ease, transform 0.2s ease;
+      overflow: hidden; /* Fix: Makes image corners rounded */
+    }
+
+    .product-card:hover {
+      border-color: #3b82f6; /* Change border color on hover */
+      transform: translateY(-5px);
+    }
+
+    .product-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h2 {
+      font-size: 1.3rem;
+      margin: 10px 0;
+      color: #111827;
+    }
+
+    .product-info p {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-bottom: 15px;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      color: #10b981;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .buy-btn {
+      background: transparent;
+      color: #3b82f6;
+      border: 1px solid #3b82f6;
+      border-radius: 50px;
+      padding: 10px 25px;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #3b82f6;
+      color: #fff;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 480px) {
+      .product-card {
+        width: 90%; /* Full width on mobile */
+      }
+
+      .product-info h2 {
+        font-size: 1.1rem;
+      }
+
+      .product-info p {
+        font-size: 0.85rem;
+      }
+
+      .buy-btn {
+        padding: 8px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://plus.unsplash.com/premium_photo-1679913792906-13ccc5c84d44" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h2>Minimal Headphones</h2>
+      <p>Crystal clear sound with ultra-minimal design.</p>
+      <div class="product-price">$199</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
