@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A wide horizontal minimal product card with a modern, clean design and responsive layout for eCommerce projects." />
+  <meta name="keywords" content="horizontal product card, landscape ecommerce card, minimal responsive ui, modern product design" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Wide Horizontal Minimal Product Card</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 15px;
+    }
+
+    .product-card {
+      display: flex;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 700px;
+      max-width: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-image img {
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .product-info h2 {
+      font-size: 1.6rem;
+      color: #1e293b;
+      margin-bottom: 8px;
+    }
+
+    .product-info p {
+      font-size: 1rem;
+      color: #64748b;
+      margin-bottom: 12px;
+    }
+
+    .product-price {
+      font-size: 1.3rem;
+      color: #16a34a;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .buy-btn {
+      background: #3b82f6;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 25px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #2563eb;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-card {
+        flex-direction: column;
+        width: 90%;
+      }
+      
+      .product-image img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=800&q=80" alt="Modern Desk Lamp">
+    </div>
+    <div class="product-info">
+      <h2>Desk Lamp</h2>
+      <p>Minimalist design with soft lighting for productive workspaces.</p>
+      <div class="product-price">$59</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
