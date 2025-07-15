@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A minimal responsive product card design where border color changes smoothly on hover for modern UI/UX." />
+  <meta name="keywords" content="border hover product card, ecommerce responsive card, modern ui hover animation" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Border Color Change on Hover Product Card</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .product-card {
+      background: #ffffff;
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
+      transition: border-color 0.4s ease, box-shadow 0.3s ease;
+      width: 280px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+    }
+
+    .product-card:hover {
+      border-color: #3b82f6; /* Blue border on hover */
+      box-shadow: 0 8px 24px rgba(59, 130, 246, 0.2);
+    }
+
+    .product-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-info h2 {
+      font-size: 1.3rem;
+      color: #111827;
+      margin-bottom: 6px;
+    }
+
+    .product-info p {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 1.1rem;
+      color: #16a34a;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .buy-btn {
+      background: #3b82f6;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 18px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://images.pexels.com/photos/890669/pexels-photo-890669.jpeg" alt="Modern Table">
+    </div>
+    <div class="product-info">
+      <h2>Modern Table</h2>
+      <p>Perfect for contemporary interiors and workspace.</p>
+      <div class="product-price">$299</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
