@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A responsive product card with elegant zoom-on-hover effect for modern eCommerce websites and portfolios." />
+  <meta name="keywords" content="zoom hover product card, ecommerce responsive design, modern ui product card" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Zoom on Hover Product Card</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .product-card {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 300px;
+    }
+
+    .product-image {
+      overflow: hidden;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s ease;
+    }
+
+    .product-card:hover .product-image img {
+      transform: scale(1.1);
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-info h2 {
+      font-size: 1.4rem;
+      color: #1f2937;
+      margin-bottom: 8px;
+    }
+
+    .product-info p {
+      font-size: 0.95rem;
+      color: #64748b;
+      margin-bottom: 12px;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      color: #16a34a;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .buy-btn {
+      background: #3b82f6;
+      color: #ffffff;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://images.unsplash.com/photo-1600185366173-117fe39b8c5f?auto=format&fit=crop&w=800&q=80" alt="Stylish Chair">
+    </div>
+    <div class="product-info">
+      <h2>Stylish Chair</h2>
+      <p>Comfortable and elegant chair for your home office.</p>
+      <div class="product-price">$129</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
