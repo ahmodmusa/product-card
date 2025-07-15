@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A modern responsive multi-product card grid with elegant hover animations and minimal UI design." />
+  <meta name="keywords" content="product card grid, responsive ecommerce design, modern ui grid, minimal product showcase" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Responsive Multi Product Card Grid</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .product-card {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-info h2 {
+      font-size: 1.3rem;
+      color: #1f2937;
+      margin-bottom: 5px;
+    }
+
+    .product-info p {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 1.1rem;
+      color: #10b981;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://t4.ftcdn.net/jpg/12/12/17/99/360_F_1212179913_jzIJiHgN1rYsnP13UWrOIRYn8FVq3cTD.jpg" alt="Chair">
+      </div>
+      <div class="product-info">
+        <h2>Modern Chair</h2>
+        <p>Elegant wooden chair with minimal design.</p>
+        <div class="product-price">$89</div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://png.pngtree.com/png-clipart/20240802/original/pngtree-modern-chair-png-image_15689352.png" alt="Chair">
+      </div>
+      <div class="product-info">
+        <h2>Stylish Lamp</h2>
+        <p>Ambient lighting for modern interiors.</p>
+        <div class="product-price">$59</div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://img.freepik.com/premium-photo/modern-designer-chair-isolated-white-background-furniture-set-3d-render_167862-6628.jpg" alt="Chair">
+      </div>
+      <div class="product-info">
+        <h2>Comfy Sofa</h2>
+        <p>Perfect blend of comfort and luxury.</p>
+        <div class="product-price">$499</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
