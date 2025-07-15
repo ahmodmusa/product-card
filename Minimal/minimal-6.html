@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A premium product card design with hover overlay animation and responsive layout for modern eCommerce and UI projects." />
+  <meta name="keywords" content="hover overlay product card, minimal responsive design, ecommerce ui card, premium product design" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Hover Overlay Minimal Product Card</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 15px;
+    }
+
+    .product-card {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-image {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .product-card:hover .product-image img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(59, 130, 246, 0.6); /* Semi-transparent overlay */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .product-card:hover .overlay {
+      opacity: 1;
+    }
+
+    .buy-btn {
+      background: #ffffff;
+      color: #3b82f6;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #3b82f6;
+      color: #ffffff;
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-info h2 {
+      font-size: 1.4rem;
+      color: #1e293b;
+      margin-bottom: 8px;
+    }
+
+    .product-info p {
+      font-size: 0.95rem;
+      color: #64748b;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      color: #16a34a;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://img.freepik.com/premium-photo/black-sofa-classic-white-interior-3d-render-interior-mock-up_158268-192.jpg" alt="Modern Sofa">
+      <div class="overlay">
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-info">
+      <h2>Modern Sofa</h2>
+      <p>Comfort meets style with this sleek and cozy sofa design.</p>
+      <div class="product-price">$499</div>
+    </div>
+  </div>
+
+</body>
+</html>
