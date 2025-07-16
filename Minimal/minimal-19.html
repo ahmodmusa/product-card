@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A modern product card with an animated wishlist icon ❤️. Click to add or remove products from your wishlist. Fully responsive for eCommerce platforms." />
+  <meta name="keywords" content="wishlist product card, add to wishlist UI, responsive ecommerce design, product card animation, modern clean product card" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Wishlist Icon Product Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .product-card {
+      position: relative;
+      width: 300px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .wishlist-icon {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      font-size: 1.5rem;
+      color: #d1d5db;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .wishlist-icon.active {
+      color: #ef4444;
+      transform: scale(1.2);
+    }
+
+    .product-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-info h2 {
+      font-size: 1.2rem;
+      color: #1f2937;
+      margin-bottom: 8px;
+    }
+
+    .product-info p {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #10b981;
+      margin-bottom: 10px;
+    }
+
+    .buy-btn {
+      background: #3b82f6;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-card">
+    <div class="wishlist-icon" onclick="toggleWishlist(this)">❤️</div>
+    <div class="product-image">
+      <img src="https://images.pexels.com/photos/276528/pexels-photo-276528.jpeg" alt="Modern Sofa">
+    </div>
+    <div class="product-info">
+      <h2>Modern Sofa</h2>
+      <p>Elegant and comfortable sofa for your living room.</p>
+      <div class="product-price">$349</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleWishlist(icon) {
+      icon.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
