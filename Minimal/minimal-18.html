@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A modern grid layout showcasing multiple responsive product cards, perfect for eCommerce shops and online catalogs." />
+  <meta name="keywords" content="grid product card, responsive ecommerce UI, online shop layout, modern product showcase" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Grid Ready Product Cards</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafb;
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .product-image img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      display: block;
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-info h2 {
+      font-size: 1.3rem;
+      color: #1f2937;
+      margin-bottom: 6px;
+    }
+
+    .product-info p {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #10b981;
+      margin-bottom: 10px;
+    }
+
+    .buy-btn {
+      background: #3b82f6;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://images.pexels.com/photos/276528/pexels-photo-276528.jpeg" alt="Modern Sofa">
+      </div>
+      <div class="product-info">
+        <h2>Modern Sofa</h2>
+        <p>Elegant and comfortable sofa for your living room.</p>
+        <div class="product-price">$349</div>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://images.pexels.com/photos/276224/pexels-photo-276224.jpeg" alt="Wooden Table">
+      </div>
+      <div class="product-info">
+        <h2>Wooden Table</h2>
+        <p>Solid wooden table perfect for dining spaces.</p>
+        <div class="product-price">$249</div>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg" alt="Stylish Lamp">
+      </div>
+      <div class="product-info">
+        <h2>Stylish Lamp</h2>
+        <p>Modern lamp to brighten up your home decor.</p>
+        <div class="product-price">$89</div>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
