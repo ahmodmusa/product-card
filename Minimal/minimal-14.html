@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A clean and modern responsive product card with only price and call-to-action button for distraction-free eCommerce UI." />
+  <meta name="keywords" content="minimal product card, button only card, responsive ecommerce UI, modern clean card, buy now focus design" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Minimal Button Only Product Card</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .product-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      width: 260px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .product-info {
+      padding: 16px;
+      text-align: center;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      color: #10b981;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .buy-btn {
+      background: #3b82f6;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg">
+    </div>
+    <div class="product-info">
+      <div class="product-price">$399</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
