@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A responsive and modern product card with quantity selector (+/-) for a seamless shopping experience in eCommerce sites." />
+  <meta name="keywords" content="product card with quantity, ecommerce UI design, responsive product selector, add to cart UX, minimal shopping card" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Product Card with Quantity Selector</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .product-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .product-info {
+      padding: 16px;
+      text-align: center;
+    }
+
+    .product-info h2 {
+      font-size: 1.5rem;
+      color: #1f2937;
+      margin-bottom: 8px;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      color: #10b981;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+
+    .quantity-selector {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .quantity-selector button {
+      background: #3b82f6;
+      color: #ffffff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .quantity-selector button:hover {
+      background: #2563eb;
+    }
+
+    .quantity-selector input {
+      width: 40px;
+      text-align: center;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      margin: 0 6px;
+      font-size: 1rem;
+      padding: 4px;
+    }
+
+    .buy-btn {
+      background: #10b981;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #059669;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://images.pexels.com/photos/298864/pexels-photo-298864.jpeg" alt="Stylish Chair">
+    </div>
+    <div class="product-info">
+      <h2>Stylish Chair</h2>
+      <div class="product-price">$129</div>
+      <div class="quantity-selector">
+        <button class="decrement">-</button>
+        <input type="text" value="1" readonly>
+        <button class="increment">+</button>
+      </div>
+      <button class="buy-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <script>
+    const decrementBtn = document.querySelector(".decrement");
+    const incrementBtn = document.querySelector(".increment");
+    const quantityInput = document.querySelector(".quantity-selector input");
+
+    decrementBtn.addEventListener("click", () => {
+      let currentValue = parseInt(quantityInput.value);
+      if (currentValue > 1) {
+        quantityInput.value = currentValue - 1;
+      }
+    });
+
+    incrementBtn.addEventListener("click", () => {
+      let currentValue = parseInt(quantityInput.value);
+      quantityInput.value = currentValue + 1;
+    });
+  </script>
+</body>
+</html>
