@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A stunning glassmorphism product card with full background glass effect and floating text for a premium UI design. Fully responsive and perfect for eCommerce." />
+  <meta name="keywords" content="glassmorphism product card, full glass background card, floating text glass ui, premium ecommerce card css, responsive glassmorphism design" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Full Glass Background Product Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .glass-full-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      width: 300px;
+      height: 400px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .glass-full-card:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    .product-content {
+      color: #ffffff;
+      padding: 20px;
+    }
+
+    .product-content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+      color: #ffffff;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    }
+
+    .product-content p {
+      font-size: 1rem;
+      color: #e0e0e0;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: #10b981;
+      margin-bottom: 16px;
+      font-weight: bold;
+    }
+
+    .buy-btn {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 12px;
+      padding: 10px 22px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .buy-btn:hover {
+      background: rgba(255, 255, 255, 0.35);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 500px) {
+      .glass-full-card {
+        width: 90%;
+        height: auto;
+        padding: 30px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-full-card">
+    <div class="product-content">
+      <h2>Elegant Sofa</h2>
+      <p>Experience ultimate comfort with a minimalist modern design.</p>
+      <div class="price">$799</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+</body>
+</html>
