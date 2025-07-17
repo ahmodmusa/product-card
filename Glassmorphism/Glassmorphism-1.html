@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A premium glassmorphism product card with soft shadows and blur effects. Fully responsive and perfect for modern eCommerce designs." />
+  <meta name="keywords" content="glassmorphism product card, transparent card design, responsive ecommerce UI, blur effect CSS, modern glass UI" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Transparent Glass Product Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .product-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .product-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-content h2 {
+      font-size: 1.4rem;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .product-content p {
+      font-size: 0.95rem;
+      color: #e5e7eb;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #10b981;
+      margin-bottom: 12px;
+    }
+
+    .buy-btn {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 8px;
+      padding: 8px 18px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .buy-btn:hover {
+      background: rgba(255, 255, 255, 0.4);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 500px) {
+      .glass-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-card">
+    <div class="product-image">
+      <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg" alt="Modern Chair">
+    </div>
+    <div class="product-content">
+      <h2>Modern Chair</h2>
+      <p>Elegant design with premium comfort for your living room.</p>
+      <div class="price">$199</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+</body>
+</html>
