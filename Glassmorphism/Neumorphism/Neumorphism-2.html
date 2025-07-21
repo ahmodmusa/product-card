@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A premium neumorphic design with pressed inner shadows for a modern flat touch UI look. Fully responsive and elegant." />
+  <meta name="keywords" content="neumorphism pressed effect, inner shadow css, minimal ui product card, modern neumorphic design, responsive ecommerce card" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Neumorphism Pressed Inner Shadow Product Card</title>
+  <style>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e0e5ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.neumorph-card.pressed {
+  background: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: 
+    inset 8px 8px 15px #a3b1c6, 
+    inset -8px -8px 15px #ffffff;
+  width: 300px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 
+    inset 4px 4px 8px #a3b1c6, 
+    inset -4px -4px 8px #ffffff;
+}
+
+.product-content {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.product-content h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2d8f85;
+  margin-bottom: 12px;
+}
+
+.buy-btn {
+  background: #e0e5ec;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 
+    inset 4px 4px 6px #a3b1c6, 
+    inset -4px -4px 6px #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+  box-shadow: 
+    4px 4px 6px #a3b1c6, 
+    -4px -4px 6px #ffffff;
+}
+
+  </style>
+</head>
+<body>
+  <div class="neumorph-card pressed">
+    <div class="product-image">
+      <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="Smart Lamp">
+    </div>
+    <div class="product-content">
+      <h2>Smart Lamp</h2>
+      <p>Illuminate your space with this modern, energy-efficient lamp.</p>
+      <div class="price">$89</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+</body>
+</html>
