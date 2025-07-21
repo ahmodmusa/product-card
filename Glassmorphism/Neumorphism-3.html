@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modern neumorphic product card with a floating action button and subtle glow effect. Fully responsive and perfect for minimal UI design." />
+  <meta name="keywords" content="neumorphism floating button, minimal product card, soft ui design, responsive css card, modern ecommerce card" />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Neumorphism Floating Button Product Card</title>
+  <style>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e0e5ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.neumorph-card.floating {
+  background: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: 
+    8px 8px 15px #a3b1c6, 
+    -8px -8px 15px #ffffff;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 
+    4px 4px 8px #a3b1c6, 
+    -4px -4px 8px #ffffff;
+}
+
+.product-content {
+  text-align: center;
+  padding: 15px;
+}
+
+.product-content h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.product-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2d8f85;
+  margin-bottom: 14px;
+}
+
+.buy-btn {
+  background: #e0e5ec;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 
+    4px 4px 6px #a3b1c6, 
+    -4px -4px 6px #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+  box-shadow: 
+    inset 4px 4px 6px #a3b1c6, 
+    inset -4px -4px 6px #ffffff;
+}
+
+/* Floating Button */
+.floating-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: #e0e5ec;
+  border-radius: 50%;
+  box-shadow: 
+    5px 5px 10px #a3b1c6, 
+    -5px -5px 10px #ffffff,
+    inset 1px 1px 3px #ffffff,
+    inset -1px -1px 3px #a3b1c6;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff4d6d;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 
+    inset 5px 5px 10px #a3b1c6, 
+    inset -5px -5px 10px #ffffff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 500px) {
+  .neumorph-card.floating {
+    width: 90%;
+  }
+
+  .product-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .product-content p {
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="neumorph-card floating">
+    <div class="product-image">
+      <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg" alt="Vintage Camera">
+    </div>
+    <div class="product-content">
+      <h2>Vintage Camera</h2>
+      <p>Capture timeless moments with a stylish vintage camera.</p>
+      <div class="price">$329</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="floating-btn">
+      <span>&#9829;</span>
+    </div>
+  </div>
+</body>
+</html>
