@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A modern glassmorphism product card with rounded corners and frosted glass effects. Responsive and elegant design." />
+  <meta name="author" content="Ahmod Musa" />
+  <title>Glassmorphism Product Card with Rounded Corners</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 25px;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .product-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .product-info h2 {
+      margin-bottom: 8px;
+      font-size: 1.4rem;
+    }
+
+    .product-info p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      color: #e0f7fa;
+    }
+
+    .price {
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .buy-btn {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      border-radius: 15px;
+      padding: 10px 20px;
+      color: #ffffff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-card">
+    <div class="product-image">
+      <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg" alt="Premium Watch">
+    </div>
+    <div class="product-info">
+      <h2>Premium Watch</h2>
+      <p>Elegant timepiece with a sleek modern design.</p>
+      <div class="price">$299</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+</body>
+</html>
