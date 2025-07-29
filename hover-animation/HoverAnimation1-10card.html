@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>10 Modern Hover Animation Product Cards</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Common card base */
+.card {
+  width: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 14px;
+}
+.card-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #111827;
+}
+.card-content p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+.price {
+  font-weight: bold;
+  color: #10b981;
+  margin-bottom: 12px;
+}
+.btn {
+  background: #3b82f6;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #2563eb;
+}
+
+/* Hover Effects for Each Card */
+.card-1:hover { transform: translateY(-8px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+.card-2 img { transition: transform 0.4s ease; }
+.card-2:hover img { transform: scale(1.1); }
+.card-3:hover { transform: rotate(-1deg) scale(1.02); }
+.card-4 img { transition: filter 0.4s ease; }
+.card-4:hover img { filter: brightness(1.2); }
+.card-5:hover { transform: scale(1.05); }
+.card-6 img { transition: transform 0.4s ease; }
+.card-6:hover img { transform: translateY(-10px); }
+.card-7:hover { box-shadow: 0 0 20px rgba(59,130,246,0.6); }
+.card-8:hover { transform: perspective(600px) rotateY(5deg); }
+.card-9:hover { transform: perspective(600px) rotateX(5deg); }
+.card-10 img { transition: transform 0.5s ease; }
+.card-10:hover img { transform: scale(1.05) rotate(1deg); }
+</style>
+</head>
+<body>
+
+<!-- Card 1 -->
+<div class="card card-1">
+  <img src="https://images.pexels.com/photos/7319307/pexels-photo-7319307.jpeg" alt="Notebook">
+  <div class="card-content">
+    <h3>Card 1: Leather Notebook</h3>
+    <p>Premium leather notebook for daily journaling.</p>
+    <div class="price">$19.99</div>
+    <button class="btn">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Card 2 -->
+<div class="card card-2">
+  <img src="https://images.pexels.com/photos/2499615/pexels-photo-2499615.jpeg" alt="Sunglasses">
+  <div class="card-content">
+    <h3>Card 2: Bamboo Sunglasses</h3>
+    <p>Eco-friendly bamboo frame sunglasses.</p>
+    <div class="price">$29.95</div>
+    <button class="btn">Buy Now</button>
+  </div>
+</div>
+
+<!-- Card 3 -->
+<div class="card card-3">
+  <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" alt="Smart Watch">
+  <div class="card-content">
+    <h3>Card 3: Smart Watch</h3>
+    <p>Track health & style with a modern smart watch.</p>
+    <div class="price">$149</div>
+    <button class="btn">Buy Now</button>
+  </div>
+</div>
+
+<!-- Card 4 -->
+<div class="card card-4">
+  <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg" alt="Camera">
+  <div class="card-content">
+    <h3>Card 4: DSLR Camera</h3>
+    <p>Professional photography at your fingertips.</p>
+    <div class="price">$799</div>
+    <button class="btn">Order Now</button>
+  </div>
+</div>
+
+<!-- Card 5 -->
+<div class="card card-5">
+  <img src="https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg" alt="Coffee Mug">
+  <div class="card-content">
+    <h3>Card 5: Coffee Mug</h3>
+    <p>Cozy mornings start with this mug.</p>
+    <div class="price">$15</div>
+    <button class="btn">Shop Now</button>
+  </div>
+</div>
+
+<!-- Card 6 -->
+<div class="card card-6">
+  <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg" alt="Chair">
+  <div class="card-content">
+    <h3>Card 6: Lounge Chair</h3>
+    <p>Comfortable modern design with soft cushions.</p>
+    <div class="price">$249</div>
+    <button class="btn">Order Now</button>
+  </div>
+</div>
+
+<!-- Card 7 -->
+<div class="card card-7">
+  <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Headphones">
+  <div class="card-content">
+    <h3>Card 7: Wireless Headphones</h3>
+    <p>Crystal-clear sound & noise-canceling tech.</p>
+    <div class="price">$89.99</div>
+    <button class="btn">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Card 8 -->
+<div class="card card-8">
+  <img src="https://images.pexels.com/photos/7319313/pexels-photo-7319313.jpeg" alt="Shoes">
+  <div class="card-content">
+    <h3>Card 8: Running Sneakers</h3>
+    <p>Lightweight breathable running shoes.</p>
+    <div class="price">$59.95</div>
+    <button class="btn">Buy Now</button>
+  </div>
+</div>
+
+<!-- Card 9 -->
+<div class="card card-9">
+  <img src="https://images.pexels.com/photos/1289903/pexels-photo-1289903.jpeg" alt="Backpack">
+  <div class="card-content">
+    <h3>Card 9: Travel Backpack</h3>
+    <p>Durable and stylish for all adventures.</p>
+    <div class="price">$69</div>
+    <button class="btn">Shop Now</button>
+  </div>
+</div>
+
+<!-- Card 10 -->
+<div class="card card-10">
+  <img src="https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg" alt="Laptop">
+  <div class="card-content">
+    <h3>Card 10: Ultrabook Laptop</h3>
+    <p>Lightweight, powerful, long battery life.</p>
+    <div class="price">$999</div>
+    <button class="btn">Order Now</button>
+  </div>
+</div>
+
+</body>
+</html>
