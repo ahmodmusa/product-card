@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Modern Product Cards Set 1–5</title>
+<style>
+/* ===== General Page Styles ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ===== Common Button Style ===== */
+.btn {
+  background: #3b82f6;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #2563eb;
+}
+
+/* ===== Card 1: Minimal Standard ===== */
+.card-minimal {
+  background: #fff;
+  width: 280px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  text-align: center;
+}
+.card-minimal img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-minimal .content {
+  padding: 14px;
+}
+.card-minimal h3 {
+  margin-bottom: 6px;
+  color: #111827;
+}
+.card-minimal p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+.price {
+  font-weight: bold;
+  color: #10b981;
+  margin-bottom: 12px;
+}
+
+/* ===== Card 2: Floating Badge ===== */
+.card-badge {
+  position: relative;
+  background: #fff;
+  width: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.card-badge img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-badge .content {
+  padding: 14px;
+}
+
+/* ===== Card 3: Glassmorphism ===== */
+.card-glass {
+  width: 280px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+.card-glass img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-glass .content {
+  padding: 14px;
+  color: #fff;
+}
+
+/* ===== Card 4: Overlay Hover ===== */
+.card-overlay {
+  position: relative;
+  width: 280px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.card-overlay img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.card-overlay:hover img {
+  transform: scale(1.1);
+}
+.overlay-content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+/* ===== Card 5: Polaroid Style ===== */
+.card-polaroid {
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  width: 260px;
+  text-align: center;
+}
+.card-polaroid img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+</style>
+</head>
+<body>
+
+<!-- Card 1 -->
+<div class="card-minimal">
+  <img src="https://images.pexels.com/photos/7319307/pexels-photo-7319307.jpeg" alt="Notebook">
+  <div class="content">
+    <h3>Classic Leather Notebook</h3>
+    <p>Premium leather notebook for daily journaling.</p>
+    <div class="price">$19.99</div>
+    <button class="btn">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Card 2 -->
+<div class="card-badge">
+  <span class="badge">Sale</span>
+  <img src="https://images.pexels.com/photos/2499615/pexels-photo-2499615.jpeg" alt="Bamboo Sunglasses">
+  <div class="content">
+    <h3>Bamboo Sunglasses</h3>
+    <p>Eco-friendly bamboo frame sunglasses.</p>
+    <div class="price">$29.95</div>
+    <button class="btn">Buy Now</button>
+  </div>
+</div>
+
+<!-- Card 3 -->
+<div class="card-glass" style="background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));">
+  <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" alt="Smart Watch">
+  <div class="content">
+    <h3>Smart Watch</h3>
+    <p>Track your health and style with a modern watch.</p>
+    <div class="price">$149</div>
+    <button class="btn">Buy Now</button>
+  </div>
+</div>
+
+<!-- Card 4 -->
+<div class="card-overlay">
+  <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg" alt="Camera">
+  <div class="overlay-content">
+    <h3>DSLR Camera</h3>
+    <p>Professional photography at your fingertips.</p>
+    <div class="price">$799</div>
+    <button class="btn">Order Now</button>
+  </div>
+</div>
+
+<!-- Card 5 -->
+<div class="card-polaroid">
+  <img src="https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg" alt="Coffee Mug">
+  <h3>Ceramic Coffee Mug</h3>
+  <p>Cozy mornings start with this mug.</p>
+  <div class="price">$15</div>
+</div>
+
+</body>
+</html>
