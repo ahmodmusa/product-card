@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Product Card 11 - 3D Tilt + Shadow Pop Hover</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .card-11 {
+    perspective: 1000px;
+    width: 280px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card-11-inner {
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+  }
+
+  .card-11:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  }
+
+  .card-11:hover .card-11-inner {
+    transform: rotateX(8deg) rotateY(8deg) scale(1.05);
+  }
+
+  .card-11 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .card-content {
+    padding: 14px;
+    text-align: center;
+  }
+
+  .card-content h3 {
+    font-size: 1.1rem;
+    color: #111827;
+    margin-bottom: 6px;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-weight: bold;
+    color: #10b981;
+    margin-bottom: 12px;
+  }
+
+  .btn {
+    background: #3b82f6;
+    color: #fff;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .btn:hover {
+    background: #2563eb;
+  }
+</style>
+</head>
+<body>
+
+<div class="card-11">
+  <div class="card-11-inner">
+    <img src="https://images.pexels.com/photos/373945/pexels-photo-373945.jpeg" alt="Wireless Speaker" />
+    <div class="card-content">
+      <h3>Card 11: Wireless Speaker</h3>
+      <p>Crystal-clear sound with rich bass.</p>
+      <div class="price">$79.99</div>
+      <button class="btn">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
